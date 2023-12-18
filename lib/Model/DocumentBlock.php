@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentBlock Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class DocumentBlock implements ModelInterface, ArrayAccess
         'prefix' => 'string',
         'custom_field1' => 'string',
         'custom_field2' => 'string',
-        'type' => '\Swagger\Client\Model\DocumentBlockType'
+        'type' => '\Billingo\Model\DocumentBlockType'
     ];
 
     /**
@@ -354,7 +354,7 @@ class DocumentBlock implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\DocumentBlockType
+     * @return \Billingo\Model\DocumentBlockType
      */
     public function getType()
     {
@@ -364,7 +364,7 @@ class DocumentBlock implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\DocumentBlockType $type type
+     * @param \Billingo\Model\DocumentBlockType $type type
      *
      * @return $this
      */

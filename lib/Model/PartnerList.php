@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * PartnerList Class Doc Comment
  *
  * @category Class
  * @description A object with a data property that contains an array of up to limit partners. Each entry in the array is a separate partner object. If no more partners are available, the resulting array will be empty.
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class PartnerList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Swagger\Client\Model\Partner[]',
+        'data' => '\Billingo\Model\Partner[]',
         'total' => 'int',
         'per_page' => 'int',
         'current_page' => 'int',
@@ -241,7 +241,7 @@ class PartnerList implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \Swagger\Client\Model\Partner[]
+     * @return \Billingo\Model\Partner[]
      */
     public function getData()
     {
@@ -251,7 +251,7 @@ class PartnerList implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \Swagger\Client\Model\Partner[] $data data
+     * @param \Billingo\Model\Partner[] $data data
      *
      * @return $this
      */

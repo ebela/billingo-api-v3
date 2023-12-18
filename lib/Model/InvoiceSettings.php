@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * InvoiceSettings Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class InvoiceSettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'document_type' => '\Swagger\Client\Model\DocumentType',
+        'document_type' => '\Billingo\Model\DocumentType',
         'fulfillment_date' => '\DateTime',
         'due_date' => '\DateTime',
-        'document_format' => '\Swagger\Client\Model\DocumentFormat',
+        'document_format' => '\Billingo\Model\DocumentFormat',
         'comment' => 'string'
     ];
 
@@ -228,7 +228,7 @@ class InvoiceSettings implements ModelInterface, ArrayAccess
     /**
      * Gets document_type
      *
-     * @return \Swagger\Client\Model\DocumentType
+     * @return \Billingo\Model\DocumentType
      */
     public function getDocumentType()
     {
@@ -238,7 +238,7 @@ class InvoiceSettings implements ModelInterface, ArrayAccess
     /**
      * Sets document_type
      *
-     * @param \Swagger\Client\Model\DocumentType $document_type document_type
+     * @param \Billingo\Model\DocumentType $document_type document_type
      *
      * @return $this
      */
@@ -300,7 +300,7 @@ class InvoiceSettings implements ModelInterface, ArrayAccess
     /**
      * Gets document_format
      *
-     * @return \Swagger\Client\Model\DocumentFormat
+     * @return \Billingo\Model\DocumentFormat
      */
     public function getDocumentFormat()
     {
@@ -310,7 +310,7 @@ class InvoiceSettings implements ModelInterface, ArrayAccess
     /**
      * Sets document_format
      *
-     * @param \Swagger\Client\Model\DocumentFormat $document_format document_format
+     * @param \Billingo\Model\DocumentFormat $document_format document_format
      *
      * @return $this
      */

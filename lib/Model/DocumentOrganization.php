@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentOrganization Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'tax_number' => 'string',
-        'bank_account' => '\Swagger\Client\Model\DocumentBankAccount',
-        'address' => '\Swagger\Client\Model\Address',
+        'bank_account' => '\Billingo\Model\DocumentBankAccount',
+        'address' => '\Billingo\Model\Address',
         'small_taxpayer' => 'bool',
         'ev_number' => 'string',
         'eu_tax_number' => 'string',
@@ -294,7 +294,7 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     /**
      * Gets bank_account
      *
-     * @return \Swagger\Client\Model\DocumentBankAccount
+     * @return \Billingo\Model\DocumentBankAccount
      */
     public function getBankAccount()
     {
@@ -304,7 +304,7 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     /**
      * Sets bank_account
      *
-     * @param \Swagger\Client\Model\DocumentBankAccount $bank_account bank_account
+     * @param \Billingo\Model\DocumentBankAccount $bank_account bank_account
      *
      * @return $this
      */
@@ -318,7 +318,7 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Billingo\Model\Address
      */
     public function getAddress()
     {
@@ -328,7 +328,7 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address address
+     * @param \Billingo\Model\Address $address address
      *
      * @return $this
      */

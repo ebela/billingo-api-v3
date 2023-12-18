@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentBlockList Class Doc Comment
  *
  * @category Class
  * @description A object with a data property that contains an array of up to limit document blocks. Each entry in the array is a separate document block object. If no more document block are available, the resulting array will be empty.
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class DocumentBlockList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Swagger\Client\Model\DocumentBlock[]',
+        'data' => '\Billingo\Model\DocumentBlock[]',
         'total' => 'int',
         'per_page' => 'int',
         'current_page' => 'int',
@@ -241,7 +241,7 @@ class DocumentBlockList implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \Swagger\Client\Model\DocumentBlock[]
+     * @return \Billingo\Model\DocumentBlock[]
      */
     public function getData()
     {
@@ -251,7 +251,7 @@ class DocumentBlockList implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \Swagger\Client\Model\DocumentBlock[] $data data
+     * @param \Billingo\Model\DocumentBlock[] $data data
      *
      * @return $this
      */

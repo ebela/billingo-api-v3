@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * Product Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,13 +59,13 @@ class Product implements ModelInterface, ArrayAccess
         'id' => 'int',
         'name' => 'string',
         'comment' => 'string',
-        'currency' => '\Swagger\Client\Model\Currency',
-        'vat' => '\Swagger\Client\Model\Vat',
+        'currency' => '\Billingo\Model\Currency',
+        'vat' => '\Billingo\Model\Vat',
         'net_unit_price' => 'float',
         'unit' => 'string',
         'general_ledger_number' => 'string',
         'general_ledger_taxcode' => 'string',
-        'entitlement' => '\Swagger\Client\Model\Entitlement'
+        'entitlement' => '\Billingo\Model\Entitlement'
     ];
 
     /**
@@ -342,7 +342,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Gets currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \Billingo\Model\Currency
      */
     public function getCurrency()
     {
@@ -352,7 +352,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Sets currency
      *
-     * @param \Swagger\Client\Model\Currency $currency currency
+     * @param \Billingo\Model\Currency $currency currency
      *
      * @return $this
      */
@@ -366,7 +366,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Gets vat
      *
-     * @return \Swagger\Client\Model\Vat
+     * @return \Billingo\Model\Vat
      */
     public function getVat()
     {
@@ -376,7 +376,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Sets vat
      *
-     * @param \Swagger\Client\Model\Vat $vat vat
+     * @param \Billingo\Model\Vat $vat vat
      *
      * @return $this
      */
@@ -486,7 +486,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Gets entitlement
      *
-     * @return \Swagger\Client\Model\Entitlement
+     * @return \Billingo\Model\Entitlement
      */
     public function getEntitlement()
     {
@@ -496,7 +496,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Sets entitlement
      *
-     * @param \Swagger\Client\Model\Entitlement $entitlement entitlement
+     * @param \Billingo\Model\Entitlement $entitlement entitlement
      *
      * @return $this
      */

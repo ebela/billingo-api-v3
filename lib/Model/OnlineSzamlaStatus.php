@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * OnlineSzamlaStatus Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class OnlineSzamlaStatus implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'transaction_id' => 'string',
         'status' => 'string',
-        'messages' => '\Swagger\Client\Model\OnlineSzamlaStatusMessage[]'
+        'messages' => '\Billingo\Model\OnlineSzamlaStatusMessage[]'
     ];
 
     /**
@@ -264,7 +264,7 @@ class OnlineSzamlaStatus implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \Swagger\Client\Model\OnlineSzamlaStatusMessage[]
+     * @return \Billingo\Model\OnlineSzamlaStatusMessage[]
      */
     public function getMessages()
     {
@@ -274,7 +274,7 @@ class OnlineSzamlaStatus implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \Swagger\Client\Model\OnlineSzamlaStatusMessage[] $messages messages
+     * @param \Billingo\Model\OnlineSzamlaStatusMessage[] $messages messages
      *
      * @return $this
      */

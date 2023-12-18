@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentExportFilterExtra Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class DocumentExportFilterExtra implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'tensoft_vkod' => 'string',
-        'ledger_number' => '\Swagger\Client\Model\LedgerNumberInformation',
+        'ledger_number' => '\Billingo\Model\LedgerNumberInformation',
         'forintsoft_konyvelesi_naplo_szam' => 'string',
         'positive_ledger_number' => 'string',
         'negative_ledger_number' => 'string',
@@ -276,7 +276,7 @@ class DocumentExportFilterExtra implements ModelInterface, ArrayAccess
     /**
      * Gets ledger_number
      *
-     * @return \Swagger\Client\Model\LedgerNumberInformation
+     * @return \Billingo\Model\LedgerNumberInformation
      */
     public function getLedgerNumber()
     {
@@ -286,7 +286,7 @@ class DocumentExportFilterExtra implements ModelInterface, ArrayAccess
     /**
      * Sets ledger_number
      *
-     * @param \Swagger\Client\Model\LedgerNumberInformation $ledger_number ledger_number
+     * @param \Billingo\Model\LedgerNumberInformation $ledger_number ledger_number
      *
      * @return $this
      */

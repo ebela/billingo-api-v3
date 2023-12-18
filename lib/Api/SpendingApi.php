@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Billingo\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Billingo\ApiException;
+use Billingo\Configuration;
+use Billingo\HeaderSelector;
+use Billingo\ObjectSerializer;
 
 /**
  * SpendingApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class SpendingApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class SpendingApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -153,7 +153,7 @@ class SpendingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -161,7 +161,7 @@ class SpendingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -169,7 +169,7 @@ class SpendingApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\Billingo\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -177,7 +177,7 @@ class SpendingApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class SpendingApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -193,7 +193,7 @@ class SpendingApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\Billingo\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -201,7 +201,7 @@ class SpendingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\Billingo\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -380,18 +380,18 @@ class SpendingApi
      * @param  string $q q (optional)
      * @param  int $page page (optional, default to 1)
      * @param  int $per_page per_page (optional, default to 25)
-     * @param  \Swagger\Client\Model\DateType $spending_date spending_date (optional)
+     * @param  \Billingo\Model\DateType $spending_date spending_date (optional)
      * @param  string $start_date start_date (optional)
      * @param  string $end_date end_date (optional)
-     * @param  \Swagger\Client\Model\PaymentStatusSpending $payment_status payment_status (optional)
-     * @param  \Swagger\Client\Model\Source $spending_type spending_type (optional)
-     * @param  \Swagger\Client\Model\Category $categories categories (optional)
-     * @param  \Swagger\Client\Model\Currency $currencies currencies (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_methods payment_methods (optional)
+     * @param  \Billingo\Model\PaymentStatusSpending $payment_status payment_status (optional)
+     * @param  \Billingo\Model\Source $spending_type spending_type (optional)
+     * @param  \Billingo\Model\Category $categories categories (optional)
+     * @param  \Billingo\Model\Currency $currencies currencies (optional)
+     * @param  \Billingo\Model\PaymentMethod $payment_methods payment_methods (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SpendingList
+     * @return \Billingo\Model\SpendingList
      */
     public function spendingList($q = null, $page = '1', $per_page = '25', $spending_date = null, $start_date = null, $end_date = null, $payment_status = null, $spending_type = null, $categories = null, $currencies = null, $payment_methods = null)
     {
@@ -407,22 +407,22 @@ class SpendingApi
      * @param  string $q (optional)
      * @param  int $page (optional, default to 1)
      * @param  int $per_page (optional, default to 25)
-     * @param  \Swagger\Client\Model\DateType $spending_date (optional)
+     * @param  \Billingo\Model\DateType $spending_date (optional)
      * @param  string $start_date (optional)
      * @param  string $end_date (optional)
-     * @param  \Swagger\Client\Model\PaymentStatusSpending $payment_status (optional)
-     * @param  \Swagger\Client\Model\Source $spending_type (optional)
-     * @param  \Swagger\Client\Model\Category $categories (optional)
-     * @param  \Swagger\Client\Model\Currency $currencies (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_methods (optional)
+     * @param  \Billingo\Model\PaymentStatusSpending $payment_status (optional)
+     * @param  \Billingo\Model\Source $spending_type (optional)
+     * @param  \Billingo\Model\Category $categories (optional)
+     * @param  \Billingo\Model\Currency $currencies (optional)
+     * @param  \Billingo\Model\PaymentMethod $payment_methods (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SpendingList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Billingo\Model\SpendingList, HTTP status code, HTTP response headers (array of strings)
      */
     public function spendingListWithHttpInfo($q = null, $page = '1', $per_page = '25', $spending_date = null, $start_date = null, $end_date = null, $payment_status = null, $spending_type = null, $categories = null, $currencies = null, $payment_methods = null)
     {
-        $returnType = '\Swagger\Client\Model\SpendingList';
+        $returnType = '\Billingo\Model\SpendingList';
         $request = $this->spendingListRequest($q, $page, $per_page, $spending_date, $start_date, $end_date, $payment_status, $spending_type, $categories, $currencies, $payment_methods);
 
         try {
@@ -474,7 +474,7 @@ class SpendingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SpendingList',
+                        '\Billingo\Model\SpendingList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -482,7 +482,7 @@ class SpendingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -490,7 +490,7 @@ class SpendingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -498,7 +498,7 @@ class SpendingApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\Billingo\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -506,7 +506,7 @@ class SpendingApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\Billingo\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -514,7 +514,7 @@ class SpendingApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\Billingo\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -522,7 +522,7 @@ class SpendingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\Billingo\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -540,14 +540,14 @@ class SpendingApi
      * @param  string $q (optional)
      * @param  int $page (optional, default to 1)
      * @param  int $per_page (optional, default to 25)
-     * @param  \Swagger\Client\Model\DateType $spending_date (optional)
+     * @param  \Billingo\Model\DateType $spending_date (optional)
      * @param  string $start_date (optional)
      * @param  string $end_date (optional)
-     * @param  \Swagger\Client\Model\PaymentStatusSpending $payment_status (optional)
-     * @param  \Swagger\Client\Model\Source $spending_type (optional)
-     * @param  \Swagger\Client\Model\Category $categories (optional)
-     * @param  \Swagger\Client\Model\Currency $currencies (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_methods (optional)
+     * @param  \Billingo\Model\PaymentStatusSpending $payment_status (optional)
+     * @param  \Billingo\Model\Source $spending_type (optional)
+     * @param  \Billingo\Model\Category $categories (optional)
+     * @param  \Billingo\Model\Currency $currencies (optional)
+     * @param  \Billingo\Model\PaymentMethod $payment_methods (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -570,21 +570,21 @@ class SpendingApi
      * @param  string $q (optional)
      * @param  int $page (optional, default to 1)
      * @param  int $per_page (optional, default to 25)
-     * @param  \Swagger\Client\Model\DateType $spending_date (optional)
+     * @param  \Billingo\Model\DateType $spending_date (optional)
      * @param  string $start_date (optional)
      * @param  string $end_date (optional)
-     * @param  \Swagger\Client\Model\PaymentStatusSpending $payment_status (optional)
-     * @param  \Swagger\Client\Model\Source $spending_type (optional)
-     * @param  \Swagger\Client\Model\Category $categories (optional)
-     * @param  \Swagger\Client\Model\Currency $currencies (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_methods (optional)
+     * @param  \Billingo\Model\PaymentStatusSpending $payment_status (optional)
+     * @param  \Billingo\Model\Source $spending_type (optional)
+     * @param  \Billingo\Model\Category $categories (optional)
+     * @param  \Billingo\Model\Currency $currencies (optional)
+     * @param  \Billingo\Model\PaymentMethod $payment_methods (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function spendingListAsyncWithHttpInfo($q = null, $page = '1', $per_page = '25', $spending_date = null, $start_date = null, $end_date = null, $payment_status = null, $spending_type = null, $categories = null, $currencies = null, $payment_methods = null)
     {
-        $returnType = '\Swagger\Client\Model\SpendingList';
+        $returnType = '\Billingo\Model\SpendingList';
         $request = $this->spendingListRequest($q, $page, $per_page, $spending_date, $start_date, $end_date, $payment_status, $spending_type, $categories, $currencies, $payment_methods);
 
         return $this->client
@@ -630,14 +630,14 @@ class SpendingApi
      * @param  string $q (optional)
      * @param  int $page (optional, default to 1)
      * @param  int $per_page (optional, default to 25)
-     * @param  \Swagger\Client\Model\DateType $spending_date (optional)
+     * @param  \Billingo\Model\DateType $spending_date (optional)
      * @param  string $start_date (optional)
      * @param  string $end_date (optional)
-     * @param  \Swagger\Client\Model\PaymentStatusSpending $payment_status (optional)
-     * @param  \Swagger\Client\Model\Source $spending_type (optional)
-     * @param  \Swagger\Client\Model\Category $categories (optional)
-     * @param  \Swagger\Client\Model\Currency $currencies (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_methods (optional)
+     * @param  \Billingo\Model\PaymentStatusSpending $payment_status (optional)
+     * @param  \Billingo\Model\Source $spending_type (optional)
+     * @param  \Billingo\Model\Category $categories (optional)
+     * @param  \Billingo\Model\Currency $currencies (optional)
+     * @param  \Billingo\Model\PaymentMethod $payment_methods (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -772,11 +772,11 @@ class SpendingApi
      *
      * Creates a new spending.
      *
-     * @param  \Swagger\Client\Model\SpendingSave $body body (optional)
+     * @param  \Billingo\Model\SpendingSave $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Spending
+     * @return \Billingo\Model\Spending
      */
     public function spendingSave($body = null)
     {
@@ -789,15 +789,15 @@ class SpendingApi
      *
      * Creates a new spending.
      *
-     * @param  \Swagger\Client\Model\SpendingSave $body (optional)
+     * @param  \Billingo\Model\SpendingSave $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Spending, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Billingo\Model\Spending, HTTP status code, HTTP response headers (array of strings)
      */
     public function spendingSaveWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\Spending';
+        $returnType = '\Billingo\Model\Spending';
         $request = $this->spendingSaveRequest($body);
 
         try {
@@ -849,7 +849,7 @@ class SpendingApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Spending',
+                        '\Billingo\Model\Spending',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -857,7 +857,7 @@ class SpendingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -865,7 +865,7 @@ class SpendingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -873,7 +873,7 @@ class SpendingApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\Billingo\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -881,7 +881,7 @@ class SpendingApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -889,7 +889,7 @@ class SpendingApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\Billingo\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -897,7 +897,7 @@ class SpendingApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\Billingo\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -905,7 +905,7 @@ class SpendingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\Billingo\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -920,7 +920,7 @@ class SpendingApi
      *
      * Creates a new spending.
      *
-     * @param  \Swagger\Client\Model\SpendingSave $body (optional)
+     * @param  \Billingo\Model\SpendingSave $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -940,14 +940,14 @@ class SpendingApi
      *
      * Creates a new spending.
      *
-     * @param  \Swagger\Client\Model\SpendingSave $body (optional)
+     * @param  \Billingo\Model\SpendingSave $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function spendingSaveAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\Spending';
+        $returnType = '\Billingo\Model\Spending';
         $request = $this->spendingSaveRequest($body);
 
         return $this->client
@@ -990,7 +990,7 @@ class SpendingApi
     /**
      * Create request for operation 'spendingSave'
      *
-     * @param  \Swagger\Client\Model\SpendingSave $body (optional)
+     * @param  \Billingo\Model\SpendingSave $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1086,9 +1086,9 @@ class SpendingApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Spending
+     * @return \Billingo\Model\Spending
      */
     public function spendingShow($id)
     {
@@ -1103,13 +1103,13 @@ class SpendingApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Spending, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Billingo\Model\Spending, HTTP status code, HTTP response headers (array of strings)
      */
     public function spendingShowWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Spending';
+        $returnType = '\Billingo\Model\Spending';
         $request = $this->spendingShowRequest($id);
 
         try {
@@ -1161,7 +1161,7 @@ class SpendingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Spending',
+                        '\Billingo\Model\Spending',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1169,7 +1169,7 @@ class SpendingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1177,7 +1177,7 @@ class SpendingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1185,7 +1185,7 @@ class SpendingApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\Billingo\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1193,7 +1193,7 @@ class SpendingApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1201,7 +1201,7 @@ class SpendingApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\Billingo\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1209,7 +1209,7 @@ class SpendingApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\Billingo\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1217,7 +1217,7 @@ class SpendingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\Billingo\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1259,7 +1259,7 @@ class SpendingApi
      */
     public function spendingShowAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Spending';
+        $returnType = '\Billingo\Model\Spending';
         $request = $this->spendingShowRequest($id);
 
         return $this->client
@@ -1408,11 +1408,11 @@ class SpendingApi
      * Updates a spending item.
      *
      * @param  int $id id (required)
-     * @param  \Swagger\Client\Model\SpendingSave $body body (optional)
+     * @param  \Billingo\Model\SpendingSave $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Spending
+     * @return \Billingo\Model\Spending
      */
     public function spendingUpdate($id, $body = null)
     {
@@ -1426,15 +1426,15 @@ class SpendingApi
      * Updates a spending item.
      *
      * @param  int $id (required)
-     * @param  \Swagger\Client\Model\SpendingSave $body (optional)
+     * @param  \Billingo\Model\SpendingSave $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Billingo\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Spending, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Billingo\Model\Spending, HTTP status code, HTTP response headers (array of strings)
      */
     public function spendingUpdateWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\Spending';
+        $returnType = '\Billingo\Model\Spending';
         $request = $this->spendingUpdateRequest($id, $body);
 
         try {
@@ -1486,7 +1486,7 @@ class SpendingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Spending',
+                        '\Billingo\Model\Spending',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1494,7 +1494,7 @@ class SpendingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1502,7 +1502,7 @@ class SpendingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1510,7 +1510,7 @@ class SpendingApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\Billingo\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1518,7 +1518,7 @@ class SpendingApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1526,7 +1526,7 @@ class SpendingApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\Billingo\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1534,7 +1534,7 @@ class SpendingApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\Billingo\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1542,7 +1542,7 @@ class SpendingApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\Billingo\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1550,7 +1550,7 @@ class SpendingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\Billingo\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1566,7 +1566,7 @@ class SpendingApi
      * Updates a spending item.
      *
      * @param  int $id (required)
-     * @param  \Swagger\Client\Model\SpendingSave $body (optional)
+     * @param  \Billingo\Model\SpendingSave $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1587,14 +1587,14 @@ class SpendingApi
      * Updates a spending item.
      *
      * @param  int $id (required)
-     * @param  \Swagger\Client\Model\SpendingSave $body (optional)
+     * @param  \Billingo\Model\SpendingSave $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function spendingUpdateAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\Spending';
+        $returnType = '\Billingo\Model\Spending';
         $request = $this->spendingUpdateRequest($id, $body);
 
         return $this->client
@@ -1638,7 +1638,7 @@ class SpendingApi
      * Create request for operation 'spendingUpdate'
      *
      * @param  int $id (required)
-     * @param  \Swagger\Client\Model\SpendingSave $body (optional)
+     * @param  \Billingo\Model\SpendingSave $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * Subscription Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class Subscription implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'expiration_date' => '\DateTime',
-        'features' => '\Swagger\Client\Model\Feature[]'
+        'features' => '\Billingo\Model\Feature[]'
     ];
 
     /**
@@ -234,7 +234,7 @@ class Subscription implements ModelInterface, ArrayAccess
     /**
      * Gets features
      *
-     * @return \Swagger\Client\Model\Feature[]
+     * @return \Billingo\Model\Feature[]
      */
     public function getFeatures()
     {
@@ -244,7 +244,7 @@ class Subscription implements ModelInterface, ArrayAccess
     /**
      * Sets features
      *
-     * @param \Swagger\Client\Model\Feature[] $features features
+     * @param \Billingo\Model\Feature[] $features features
      *
      * @return $this
      */

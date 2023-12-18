@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * TaxNumber Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class TaxNumber implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'tax_number' => 'string',
-        'result' => '\Swagger\Client\Model\CheckTaxNumberMessage'
+        'result' => '\Billingo\Model\CheckTaxNumberMessage'
     ];
 
     /**
@@ -234,7 +234,7 @@ class TaxNumber implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \Swagger\Client\Model\CheckTaxNumberMessage
+     * @return \Billingo\Model\CheckTaxNumberMessage
      */
     public function getResult()
     {
@@ -244,7 +244,7 @@ class TaxNumber implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \Swagger\Client\Model\CheckTaxNumberMessage $result result
+     * @param \Billingo\Model\CheckTaxNumberMessage $result result
      *
      * @return $this
      */

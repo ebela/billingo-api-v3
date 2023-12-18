@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentSettings Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'mediated_service' => 'bool',
         'without_financial_fulfillment' => 'bool',
-        'online_payment' => '\Swagger\Client\Model\OnlinePayment',
-        'round' => '\Swagger\Client\Model\Round',
+        'online_payment' => '\Billingo\Model\OnlinePayment',
+        'round' => '\Billingo\Model\Round',
         'no_send_onlineszamla_by_user' => 'bool',
         'order_number' => 'string',
         'place_id' => 'int',
         'instant_payment' => 'bool',
-        'selected_type' => '\Swagger\Client\Model\DocumentType'
+        'selected_type' => '\Billingo\Model\DocumentType'
     ];
 
     /**
@@ -300,7 +300,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Gets online_payment
      *
-     * @return \Swagger\Client\Model\OnlinePayment
+     * @return \Billingo\Model\OnlinePayment
      */
     public function getOnlinePayment()
     {
@@ -310,7 +310,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Sets online_payment
      *
-     * @param \Swagger\Client\Model\OnlinePayment $online_payment online_payment
+     * @param \Billingo\Model\OnlinePayment $online_payment online_payment
      *
      * @return $this
      */
@@ -324,7 +324,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Gets round
      *
-     * @return \Swagger\Client\Model\Round
+     * @return \Billingo\Model\Round
      */
     public function getRound()
     {
@@ -334,7 +334,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Sets round
      *
-     * @param \Swagger\Client\Model\Round $round round
+     * @param \Billingo\Model\Round $round round
      *
      * @return $this
      */
@@ -444,7 +444,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Gets selected_type
      *
-     * @return \Swagger\Client\Model\DocumentType
+     * @return \Billingo\Model\DocumentType
      */
     public function getSelectedType()
     {
@@ -454,7 +454,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Sets selected_type
      *
-     * @param \Swagger\Client\Model\DocumentType $selected_type selected_type
+     * @param \Billingo\Model\DocumentType $selected_type selected_type
      *
      * @return $this
      */

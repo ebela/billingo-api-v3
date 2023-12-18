@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * ValidationErrorResponse Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class ValidationErrorResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'message' => 'string',
-        'errors' => '\Swagger\Client\Model\ValidationError[]'
+        'errors' => '\Billingo\Model\ValidationError[]'
     ];
 
     /**
@@ -234,7 +234,7 @@ class ValidationErrorResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ValidationError[]
+     * @return \Billingo\Model\ValidationError[]
      */
     public function getErrors()
     {
@@ -244,7 +244,7 @@ class ValidationErrorResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ValidationError[] $errors errors
+     * @param \Billingo\Model\ValidationError[] $errors errors
      *
      * @return $this
      */

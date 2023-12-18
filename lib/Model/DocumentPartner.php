@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentPartner Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,14 +58,14 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'name' => 'string',
-        'address' => '\Swagger\Client\Model\Address',
+        'address' => '\Billingo\Model\Address',
         'emails' => 'string[]',
         'taxcode' => 'string',
         'iban' => 'string',
         'swift' => 'string',
         'account_number' => 'string',
         'phone' => 'string',
-        'tax_type' => '\Swagger\Client\Model\PartnerTaxType'
+        'tax_type' => '\Billingo\Model\PartnerTaxType'
     ];
 
     /**
@@ -306,7 +306,7 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Billingo\Model\Address
      */
     public function getAddress()
     {
@@ -316,7 +316,7 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address address
+     * @param \Billingo\Model\Address $address address
      *
      * @return $this
      */
@@ -474,7 +474,7 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     /**
      * Gets tax_type
      *
-     * @return \Swagger\Client\Model\PartnerTaxType
+     * @return \Billingo\Model\PartnerTaxType
      */
     public function getTaxType()
     {
@@ -484,7 +484,7 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     /**
      * Sets tax_type
      *
-     * @param \Swagger\Client\Model\PartnerTaxType $tax_type tax_type
+     * @param \Billingo\Model\PartnerTaxType $tax_type tax_type
      *
      * @return $this
      */

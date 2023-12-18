@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * Address Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class Address implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'country_code' => '\Swagger\Client\Model\Country',
+        'country_code' => '\Billingo\Model\Country',
         'post_code' => 'string',
         'city' => 'string',
         'address' => 'string'
@@ -234,7 +234,7 @@ class Address implements ModelInterface, ArrayAccess
     /**
      * Gets country_code
      *
-     * @return \Swagger\Client\Model\Country
+     * @return \Billingo\Model\Country
      */
     public function getCountryCode()
     {
@@ -244,7 +244,7 @@ class Address implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param \Swagger\Client\Model\Country $country_code country_code
+     * @param \Billingo\Model\Country $country_code country_code
      *
      * @return $this
      */

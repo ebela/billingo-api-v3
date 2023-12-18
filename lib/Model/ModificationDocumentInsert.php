@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * ModificationDocumentInsert Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'due_date' => '\DateTime',
         'comment' => 'string',
-        'payment_method' => '\Swagger\Client\Model\PaymentMethod',
+        'payment_method' => '\Billingo\Model\PaymentMethod',
         'without_financial_fulfillment' => 'bool',
-        'items' => '\Swagger\Client\Model\OneOfModificationDocumentInsertItemsItems[]'
+        'items' => '\Billingo\Model\OneOfModificationDocumentInsertItemsItems[]'
     ];
 
     /**
@@ -276,7 +276,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\PaymentMethod
+     * @return \Billingo\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -286,7 +286,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\PaymentMethod $payment_method payment_method
+     * @param \Billingo\Model\PaymentMethod $payment_method payment_method
      *
      * @return $this
      */
@@ -324,7 +324,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\OneOfModificationDocumentInsertItemsItems[]
+     * @return \Billingo\Model\OneOfModificationDocumentInsertItemsItems[]
      */
     public function getItems()
     {
@@ -334,7 +334,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\OneOfModificationDocumentInsertItemsItems[] $items items
+     * @param \Billingo\Model\OneOfModificationDocumentInsertItemsItems[] $items items
      *
      * @return $this
      */

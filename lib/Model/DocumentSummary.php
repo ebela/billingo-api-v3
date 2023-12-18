@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentSummary Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess
         'gross_amount_local' => 'float',
         'vat_amount' => 'float',
         'vat_amount_local' => 'float',
-        'vat_rate_summary' => '\Swagger\Client\Model\DocumentVatRateSummary[]'
+        'vat_rate_summary' => '\Billingo\Model\DocumentVatRateSummary[]'
     ];
 
     /**
@@ -354,7 +354,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess
     /**
      * Gets vat_rate_summary
      *
-     * @return \Swagger\Client\Model\DocumentVatRateSummary[]
+     * @return \Billingo\Model\DocumentVatRateSummary[]
      */
     public function getVatRateSummary()
     {
@@ -364,7 +364,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess
     /**
      * Sets vat_rate_summary
      *
-     * @param \Swagger\Client\Model\DocumentVatRateSummary[] $vat_rate_summary vat_rate_summary
+     * @param \Billingo\Model\DocumentVatRateSummary[] $vat_rate_summary vat_rate_summary
      *
      * @return $this
      */

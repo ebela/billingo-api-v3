@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentExportStatus Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class DocumentExportStatus implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-        'state' => '\Swagger\Client\Model\DocumentExportStatusState',
+        'state' => '\Billingo\Model\DocumentExportStatusState',
         'message' => 'string'
     ];
 
@@ -240,7 +240,7 @@ class DocumentExportStatus implements ModelInterface, ArrayAccess
     /**
      * Gets state
      *
-     * @return \Swagger\Client\Model\DocumentExportStatusState
+     * @return \Billingo\Model\DocumentExportStatusState
      */
     public function getState()
     {
@@ -250,7 +250,7 @@ class DocumentExportStatus implements ModelInterface, ArrayAccess
     /**
      * Sets state
      *
-     * @param \Swagger\Client\Model\DocumentExportStatusState $state state
+     * @param \Billingo\Model\DocumentExportStatusState $state state
      *
      * @return $this
      */

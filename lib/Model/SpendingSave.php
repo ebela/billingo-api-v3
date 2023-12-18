@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * SpendingSave Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class SpendingSave implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'currency' => '\Swagger\Client\Model\Currency',
+        'currency' => '\Billingo\Model\Currency',
         'conversion_rate' => 'float',
         'total_gross' => 'float',
         'total_gross_huf' => 'float',
@@ -64,12 +64,12 @@ class SpendingSave implements ModelInterface, ArrayAccess
         'total_vat_amount_huf' => 'float',
         'fulfillment_date' => '\DateTime',
         'paid_at' => '\DateTime',
-        'category' => '\Swagger\Client\Model\Category',
+        'category' => '\Billingo\Model\Category',
         'comment' => 'string',
         'invoice_number' => 'string',
         'invoice_date' => '\DateTime',
         'due_date' => '\DateTime',
-        'payment_method' => '\Swagger\Client\Model\SpendingPaymentMethod',
+        'payment_method' => '\Billingo\Model\SpendingPaymentMethod',
         'partner_id' => 'int'
     ];
 
@@ -312,7 +312,7 @@ class SpendingSave implements ModelInterface, ArrayAccess
     /**
      * Gets currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \Billingo\Model\Currency
      */
     public function getCurrency()
     {
@@ -322,7 +322,7 @@ class SpendingSave implements ModelInterface, ArrayAccess
     /**
      * Sets currency
      *
-     * @param \Swagger\Client\Model\Currency $currency currency
+     * @param \Billingo\Model\Currency $currency currency
      *
      * @return $this
      */
@@ -504,7 +504,7 @@ class SpendingSave implements ModelInterface, ArrayAccess
     /**
      * Gets category
      *
-     * @return \Swagger\Client\Model\Category
+     * @return \Billingo\Model\Category
      */
     public function getCategory()
     {
@@ -514,7 +514,7 @@ class SpendingSave implements ModelInterface, ArrayAccess
     /**
      * Sets category
      *
-     * @param \Swagger\Client\Model\Category $category category
+     * @param \Billingo\Model\Category $category category
      *
      * @return $this
      */
@@ -624,7 +624,7 @@ class SpendingSave implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\SpendingPaymentMethod
+     * @return \Billingo\Model\SpendingPaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -634,7 +634,7 @@ class SpendingSave implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\SpendingPaymentMethod $payment_method payment_method
+     * @param \Billingo\Model\SpendingPaymentMethod $payment_method payment_method
      *
      * @return $this
      */

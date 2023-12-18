@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * ServerErrorResponse Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ServerErrorResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'error' => '\Swagger\Client\Model\ServerError'
+        'error' => '\Billingo\Model\ServerError'
     ];
 
     /**
@@ -204,7 +204,7 @@ class ServerErrorResponse implements ModelInterface, ArrayAccess
     /**
      * Gets error
      *
-     * @return \Swagger\Client\Model\ServerError
+     * @return \Billingo\Model\ServerError
      */
     public function getError()
     {
@@ -214,7 +214,7 @@ class ServerErrorResponse implements ModelInterface, ArrayAccess
     /**
      * Sets error
      *
-     * @param \Swagger\Client\Model\ServerError $error error
+     * @param \Billingo\Model\ServerError $error error
      *
      * @return $this
      */

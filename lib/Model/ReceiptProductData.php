@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * ReceiptProductData Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ReceiptProductData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'unit_price' => 'float',
-        'vat' => '\Swagger\Client\Model\Vat'
+        'vat' => '\Billingo\Model\Vat'
     ];
 
     /**
@@ -270,7 +270,7 @@ class ReceiptProductData implements ModelInterface, ArrayAccess
     /**
      * Gets vat
      *
-     * @return \Swagger\Client\Model\Vat
+     * @return \Billingo\Model\Vat
      */
     public function getVat()
     {
@@ -280,7 +280,7 @@ class ReceiptProductData implements ModelInterface, ArrayAccess
     /**
      * Sets vat
      *
-     * @param \Swagger\Client\Model\Vat $vat vat
+     * @param \Billingo\Model\Vat $vat vat
      *
      * @return $this
      */

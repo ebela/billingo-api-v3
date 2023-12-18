@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentProductData Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'unit_price' => 'float',
-        'unit_price_type' => '\Swagger\Client\Model\UnitPriceType',
+        'unit_price_type' => '\Billingo\Model\UnitPriceType',
         'quantity' => 'float',
         'unit' => 'string',
-        'vat' => '\Swagger\Client\Model\Vat',
+        'vat' => '\Billingo\Model\Vat',
         'comment' => 'string',
-        'entitlement' => '\Swagger\Client\Model\Entitlement'
+        'entitlement' => '\Billingo\Model\Entitlement'
     ];
 
     /**
@@ -312,7 +312,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Gets unit_price_type
      *
-     * @return \Swagger\Client\Model\UnitPriceType
+     * @return \Billingo\Model\UnitPriceType
      */
     public function getUnitPriceType()
     {
@@ -322,7 +322,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Sets unit_price_type
      *
-     * @param \Swagger\Client\Model\UnitPriceType $unit_price_type unit_price_type
+     * @param \Billingo\Model\UnitPriceType $unit_price_type unit_price_type
      *
      * @return $this
      */
@@ -384,7 +384,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Gets vat
      *
-     * @return \Swagger\Client\Model\Vat
+     * @return \Billingo\Model\Vat
      */
     public function getVat()
     {
@@ -394,7 +394,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Sets vat
      *
-     * @param \Swagger\Client\Model\Vat $vat vat
+     * @param \Billingo\Model\Vat $vat vat
      *
      * @return $this
      */
@@ -432,7 +432,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Gets entitlement
      *
-     * @return \Swagger\Client\Model\Entitlement
+     * @return \Billingo\Model\Entitlement
      */
     public function getEntitlement()
     {
@@ -442,7 +442,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Sets entitlement
      *
-     * @param \Swagger\Client\Model\Entitlement $entitlement entitlement
+     * @param \Billingo\Model\Entitlement $entitlement entitlement
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * Spending Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class Spending implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'organization_id' => 'int',
-        'category' => '\Swagger\Client\Model\Category',
+        'category' => '\Billingo\Model\Category',
         'paid_at' => '\DateTime',
         'fulfillment_date' => '\DateTime',
-        'partner' => '\Swagger\Client\Model\SpendingPartner',
+        'partner' => '\Billingo\Model\SpendingPartner',
         'invoice_number' => 'string',
-        'currency' => '\Swagger\Client\Model\Currency',
+        'currency' => '\Billingo\Model\Currency',
         'conversion_rate' => 'float',
         'total_gross' => 'float',
         'total_gross_local' => 'float',
@@ -71,7 +71,7 @@ class Spending implements ModelInterface, ArrayAccess
         'total_vat_amount_local' => 'float',
         'invoice_date' => '\DateTime',
         'due_date' => '\DateTime',
-        'payment_method' => '\Swagger\Client\Model\SpendingPaymentMethod',
+        'payment_method' => '\Billingo\Model\SpendingPaymentMethod',
         'comment' => 'string'
     ];
 
@@ -348,7 +348,7 @@ class Spending implements ModelInterface, ArrayAccess
     /**
      * Gets category
      *
-     * @return \Swagger\Client\Model\Category
+     * @return \Billingo\Model\Category
      */
     public function getCategory()
     {
@@ -358,7 +358,7 @@ class Spending implements ModelInterface, ArrayAccess
     /**
      * Sets category
      *
-     * @param \Swagger\Client\Model\Category $category category
+     * @param \Billingo\Model\Category $category category
      *
      * @return $this
      */
@@ -420,7 +420,7 @@ class Spending implements ModelInterface, ArrayAccess
     /**
      * Gets partner
      *
-     * @return \Swagger\Client\Model\SpendingPartner
+     * @return \Billingo\Model\SpendingPartner
      */
     public function getPartner()
     {
@@ -430,7 +430,7 @@ class Spending implements ModelInterface, ArrayAccess
     /**
      * Sets partner
      *
-     * @param \Swagger\Client\Model\SpendingPartner $partner partner
+     * @param \Billingo\Model\SpendingPartner $partner partner
      *
      * @return $this
      */
@@ -468,7 +468,7 @@ class Spending implements ModelInterface, ArrayAccess
     /**
      * Gets currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \Billingo\Model\Currency
      */
     public function getCurrency()
     {
@@ -478,7 +478,7 @@ class Spending implements ModelInterface, ArrayAccess
     /**
      * Sets currency
      *
-     * @param \Swagger\Client\Model\Currency $currency currency
+     * @param \Billingo\Model\Currency $currency currency
      *
      * @return $this
      */
@@ -660,7 +660,7 @@ class Spending implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\SpendingPaymentMethod
+     * @return \Billingo\Model\SpendingPaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -670,7 +670,7 @@ class Spending implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\SpendingPaymentMethod $payment_method payment_method
+     * @param \Billingo\Model\SpendingPaymentMethod $payment_method payment_method
      *
      * @return $this
      */

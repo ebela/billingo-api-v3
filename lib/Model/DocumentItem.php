@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * DocumentItem Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,9 +63,9 @@ class DocumentItem implements ModelInterface, ArrayAccess
         'unit' => 'string',
         'net_amount' => 'float',
         'gross_amount' => 'float',
-        'vat' => '\Swagger\Client\Model\Vat',
+        'vat' => '\Billingo\Model\Vat',
         'vat_amount' => 'float',
-        'entitlement' => '\Swagger\Client\Model\Entitlement',
+        'entitlement' => '\Billingo\Model\Entitlement',
         'comment' => 'string'
     ];
 
@@ -432,7 +432,7 @@ class DocumentItem implements ModelInterface, ArrayAccess
     /**
      * Gets vat
      *
-     * @return \Swagger\Client\Model\Vat
+     * @return \Billingo\Model\Vat
      */
     public function getVat()
     {
@@ -442,7 +442,7 @@ class DocumentItem implements ModelInterface, ArrayAccess
     /**
      * Sets vat
      *
-     * @param \Swagger\Client\Model\Vat $vat vat
+     * @param \Billingo\Model\Vat $vat vat
      *
      * @return $this
      */
@@ -480,7 +480,7 @@ class DocumentItem implements ModelInterface, ArrayAccess
     /**
      * Gets entitlement
      *
-     * @return \Swagger\Client\Model\Entitlement
+     * @return \Billingo\Model\Entitlement
      */
     public function getEntitlement()
     {
@@ -490,7 +490,7 @@ class DocumentItem implements ModelInterface, ArrayAccess
     /**
      * Sets entitlement
      *
-     * @param \Swagger\Client\Model\Entitlement $entitlement entitlement
+     * @param \Billingo\Model\Entitlement $entitlement entitlement
      *
      * @return $this
      */

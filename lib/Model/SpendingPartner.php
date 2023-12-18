@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * SpendingPartner Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class SpendingPartner implements ModelInterface, ArrayAccess
         'id' => 'int',
         'name' => 'string',
         'tax_code' => 'string',
-        'address' => '\Swagger\Client\Model\Address',
+        'address' => '\Billingo\Model\Address',
         'iban' => 'string',
         'swift' => 'string',
         'account_number' => 'string',
@@ -330,7 +330,7 @@ class SpendingPartner implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Billingo\Model\Address
      */
     public function getAddress()
     {
@@ -340,7 +340,7 @@ class SpendingPartner implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address address
+     * @param \Billingo\Model\Address $address address
      *
      * @return $this
      */

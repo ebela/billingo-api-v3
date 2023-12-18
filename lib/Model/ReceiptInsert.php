@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * ReceiptInsert Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,12 +61,12 @@ class ReceiptInsert implements ModelInterface, ArrayAccess
         'name' => 'string',
         'emails' => 'string[]',
         'block_id' => 'int',
-        'type' => '\Swagger\Client\Model\DocumentType',
-        'payment_method' => '\Swagger\Client\Model\PaymentMethod',
-        'currency' => '\Swagger\Client\Model\Currency',
+        'type' => '\Billingo\Model\DocumentType',
+        'payment_method' => '\Billingo\Model\PaymentMethod',
+        'currency' => '\Billingo\Model\Currency',
         'conversion_rate' => 'float',
         'electronic' => 'bool',
-        'items' => '\Swagger\Client\Model\OneOfReceiptInsertItemsItems[]'
+        'items' => '\Billingo\Model\OneOfReceiptInsertItemsItems[]'
     ];
 
     /**
@@ -396,7 +396,7 @@ class ReceiptInsert implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\DocumentType
+     * @return \Billingo\Model\DocumentType
      */
     public function getType()
     {
@@ -406,7 +406,7 @@ class ReceiptInsert implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\DocumentType $type type
+     * @param \Billingo\Model\DocumentType $type type
      *
      * @return $this
      */
@@ -420,7 +420,7 @@ class ReceiptInsert implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\PaymentMethod
+     * @return \Billingo\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -430,7 +430,7 @@ class ReceiptInsert implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\PaymentMethod $payment_method payment_method
+     * @param \Billingo\Model\PaymentMethod $payment_method payment_method
      *
      * @return $this
      */
@@ -444,7 +444,7 @@ class ReceiptInsert implements ModelInterface, ArrayAccess
     /**
      * Gets currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \Billingo\Model\Currency
      */
     public function getCurrency()
     {
@@ -454,7 +454,7 @@ class ReceiptInsert implements ModelInterface, ArrayAccess
     /**
      * Sets currency
      *
-     * @param \Swagger\Client\Model\Currency $currency currency
+     * @param \Billingo\Model\Currency $currency currency
      *
      * @return $this
      */
@@ -516,7 +516,7 @@ class ReceiptInsert implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\OneOfReceiptInsertItemsItems[]
+     * @return \Billingo\Model\OneOfReceiptInsertItemsItems[]
      */
     public function getItems()
     {
@@ -526,7 +526,7 @@ class ReceiptInsert implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\OneOfReceiptInsertItemsItems[] $items items
+     * @param \Billingo\Model\OneOfReceiptInsertItemsItems[] $items items
      *
      * @return $this
      */

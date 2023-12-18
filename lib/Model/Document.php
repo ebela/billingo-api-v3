@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * Document Class Doc Comment
  *
  * @category Class
  * @description Document object representing your invoice. NOTE: partner property is deprecated. Please use document_partner instead.
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,33 +59,33 @@ class Document implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'invoice_number' => 'string',
-        'type' => '\Swagger\Client\Model\DocumentType',
+        'type' => '\Billingo\Model\DocumentType',
         'cancelled' => 'bool',
         'block_id' => 'int',
-        'payment_status' => '\Swagger\Client\Model\PaymentStatus',
-        'payment_method' => '\Swagger\Client\Model\PaymentMethod',
+        'payment_status' => '\Billingo\Model\PaymentStatus',
+        'payment_method' => '\Billingo\Model\PaymentMethod',
         'gross_total' => 'float',
-        'currency' => '\Swagger\Client\Model\Currency',
+        'currency' => '\Billingo\Model\Currency',
         'conversion_rate' => 'float',
         'invoice_date' => '\DateTime',
         'fulfillment_date' => '\DateTime',
         'due_date' => '\DateTime',
         'paid_date' => '\DateTime',
-        'organization' => '\Swagger\Client\Model\DocumentOrganization',
-        'partner' => '\Swagger\Client\Model\Partner',
-        'document_partner' => '\Swagger\Client\Model\DocumentPartner',
+        'organization' => '\Billingo\Model\DocumentOrganization',
+        'partner' => '\Billingo\Model\Partner',
+        'document_partner' => '\Billingo\Model\DocumentPartner',
         'electronic' => 'bool',
         'comment' => 'string',
         'tags' => 'string[]',
-        'notification_status' => '\Swagger\Client\Model\DocumentNotificationStatus',
-        'language' => '\Swagger\Client\Model\DocumentLanguage',
-        'items' => '\Swagger\Client\Model\DocumentItem[]',
-        'summary' => '\Swagger\Client\Model\DocumentSummary',
-        'settings' => '\Swagger\Client\Model\DocumentSettings',
-        'online_szamla_status' => '\Swagger\Client\Model\OnlineSzamlaStatusEnum',
-        'related_documents' => '\Swagger\Client\Model\DocumentAncestor[]',
-        'discount' => '\Swagger\Client\Model\Discount',
-        'correction_type' => '\Swagger\Client\Model\CorrectionType'
+        'notification_status' => '\Billingo\Model\DocumentNotificationStatus',
+        'language' => '\Billingo\Model\DocumentLanguage',
+        'items' => '\Billingo\Model\DocumentItem[]',
+        'summary' => '\Billingo\Model\DocumentSummary',
+        'settings' => '\Billingo\Model\DocumentSettings',
+        'online_szamla_status' => '\Billingo\Model\OnlineSzamlaStatusEnum',
+        'related_documents' => '\Billingo\Model\DocumentAncestor[]',
+        'discount' => '\Billingo\Model\Discount',
+        'correction_type' => '\Billingo\Model\CorrectionType'
     ];
 
     /**
@@ -421,7 +421,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\DocumentType
+     * @return \Billingo\Model\DocumentType
      */
     public function getType()
     {
@@ -431,7 +431,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\DocumentType $type type
+     * @param \Billingo\Model\DocumentType $type type
      *
      * @return $this
      */
@@ -493,7 +493,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets payment_status
      *
-     * @return \Swagger\Client\Model\PaymentStatus
+     * @return \Billingo\Model\PaymentStatus
      */
     public function getPaymentStatus()
     {
@@ -503,7 +503,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets payment_status
      *
-     * @param \Swagger\Client\Model\PaymentStatus $payment_status payment_status
+     * @param \Billingo\Model\PaymentStatus $payment_status payment_status
      *
      * @return $this
      */
@@ -517,7 +517,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\PaymentMethod
+     * @return \Billingo\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -527,7 +527,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\PaymentMethod $payment_method payment_method
+     * @param \Billingo\Model\PaymentMethod $payment_method payment_method
      *
      * @return $this
      */
@@ -565,7 +565,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \Billingo\Model\Currency
      */
     public function getCurrency()
     {
@@ -575,7 +575,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets currency
      *
-     * @param \Swagger\Client\Model\Currency $currency currency
+     * @param \Billingo\Model\Currency $currency currency
      *
      * @return $this
      */
@@ -709,7 +709,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets organization
      *
-     * @return \Swagger\Client\Model\DocumentOrganization
+     * @return \Billingo\Model\DocumentOrganization
      */
     public function getOrganization()
     {
@@ -719,7 +719,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets organization
      *
-     * @param \Swagger\Client\Model\DocumentOrganization $organization organization
+     * @param \Billingo\Model\DocumentOrganization $organization organization
      *
      * @return $this
      */
@@ -733,7 +733,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets partner
      *
-     * @return \Swagger\Client\Model\Partner
+     * @return \Billingo\Model\Partner
      */
     public function getPartner()
     {
@@ -743,7 +743,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets partner
      *
-     * @param \Swagger\Client\Model\Partner $partner partner
+     * @param \Billingo\Model\Partner $partner partner
      *
      * @return $this
      */
@@ -757,7 +757,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets document_partner
      *
-     * @return \Swagger\Client\Model\DocumentPartner
+     * @return \Billingo\Model\DocumentPartner
      */
     public function getDocumentPartner()
     {
@@ -767,7 +767,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets document_partner
      *
-     * @param \Swagger\Client\Model\DocumentPartner $document_partner document_partner
+     * @param \Billingo\Model\DocumentPartner $document_partner document_partner
      *
      * @return $this
      */
@@ -853,7 +853,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets notification_status
      *
-     * @return \Swagger\Client\Model\DocumentNotificationStatus
+     * @return \Billingo\Model\DocumentNotificationStatus
      */
     public function getNotificationStatus()
     {
@@ -863,7 +863,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets notification_status
      *
-     * @param \Swagger\Client\Model\DocumentNotificationStatus $notification_status notification_status
+     * @param \Billingo\Model\DocumentNotificationStatus $notification_status notification_status
      *
      * @return $this
      */
@@ -877,7 +877,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets language
      *
-     * @return \Swagger\Client\Model\DocumentLanguage
+     * @return \Billingo\Model\DocumentLanguage
      */
     public function getLanguage()
     {
@@ -887,7 +887,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets language
      *
-     * @param \Swagger\Client\Model\DocumentLanguage $language language
+     * @param \Billingo\Model\DocumentLanguage $language language
      *
      * @return $this
      */
@@ -901,7 +901,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\DocumentItem[]
+     * @return \Billingo\Model\DocumentItem[]
      */
     public function getItems()
     {
@@ -911,7 +911,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\DocumentItem[] $items items
+     * @param \Billingo\Model\DocumentItem[] $items items
      *
      * @return $this
      */
@@ -925,7 +925,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets summary
      *
-     * @return \Swagger\Client\Model\DocumentSummary
+     * @return \Billingo\Model\DocumentSummary
      */
     public function getSummary()
     {
@@ -935,7 +935,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets summary
      *
-     * @param \Swagger\Client\Model\DocumentSummary $summary summary
+     * @param \Billingo\Model\DocumentSummary $summary summary
      *
      * @return $this
      */
@@ -949,7 +949,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets settings
      *
-     * @return \Swagger\Client\Model\DocumentSettings
+     * @return \Billingo\Model\DocumentSettings
      */
     public function getSettings()
     {
@@ -959,7 +959,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets settings
      *
-     * @param \Swagger\Client\Model\DocumentSettings $settings settings
+     * @param \Billingo\Model\DocumentSettings $settings settings
      *
      * @return $this
      */
@@ -973,7 +973,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets online_szamla_status
      *
-     * @return \Swagger\Client\Model\OnlineSzamlaStatusEnum
+     * @return \Billingo\Model\OnlineSzamlaStatusEnum
      */
     public function getOnlineSzamlaStatus()
     {
@@ -983,7 +983,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets online_szamla_status
      *
-     * @param \Swagger\Client\Model\OnlineSzamlaStatusEnum $online_szamla_status online_szamla_status
+     * @param \Billingo\Model\OnlineSzamlaStatusEnum $online_szamla_status online_szamla_status
      *
      * @return $this
      */
@@ -997,7 +997,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets related_documents
      *
-     * @return \Swagger\Client\Model\DocumentAncestor[]
+     * @return \Billingo\Model\DocumentAncestor[]
      */
     public function getRelatedDocuments()
     {
@@ -1007,7 +1007,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets related_documents
      *
-     * @param \Swagger\Client\Model\DocumentAncestor[] $related_documents related_documents
+     * @param \Billingo\Model\DocumentAncestor[] $related_documents related_documents
      *
      * @return $this
      */
@@ -1021,7 +1021,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets discount
      *
-     * @return \Swagger\Client\Model\Discount
+     * @return \Billingo\Model\Discount
      */
     public function getDiscount()
     {
@@ -1031,7 +1031,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets discount
      *
-     * @param \Swagger\Client\Model\Discount $discount discount
+     * @param \Billingo\Model\Discount $discount discount
      *
      * @return $this
      */
@@ -1045,7 +1045,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets correction_type
      *
-     * @return \Swagger\Client\Model\CorrectionType
+     * @return \Billingo\Model\CorrectionType
      */
     public function getCorrectionType()
     {
@@ -1055,7 +1055,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets correction_type
      *
-     * @param \Swagger\Client\Model\CorrectionType $correction_type correction_type
+     * @param \Billingo\Model\CorrectionType $correction_type correction_type
      *
      * @return $this
      */

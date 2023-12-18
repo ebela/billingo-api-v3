@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * ConversationRate Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class ConversationRate implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'from_currency' => '\Swagger\Client\Model\Currency',
-        'to_currency' => '\Swagger\Client\Model\Currency',
+        'from_currency' => '\Billingo\Model\Currency',
+        'to_currency' => '\Billingo\Model\Currency',
         'conversation_rate' => 'float',
         'date' => '\DateTime'
     ];
@@ -222,7 +222,7 @@ class ConversationRate implements ModelInterface, ArrayAccess
     /**
      * Gets from_currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \Billingo\Model\Currency
      */
     public function getFromCurrency()
     {
@@ -232,7 +232,7 @@ class ConversationRate implements ModelInterface, ArrayAccess
     /**
      * Sets from_currency
      *
-     * @param \Swagger\Client\Model\Currency $from_currency from_currency
+     * @param \Billingo\Model\Currency $from_currency from_currency
      *
      * @return $this
      */
@@ -246,7 +246,7 @@ class ConversationRate implements ModelInterface, ArrayAccess
     /**
      * Gets to_currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \Billingo\Model\Currency
      */
     public function getToCurrency()
     {
@@ -256,7 +256,7 @@ class ConversationRate implements ModelInterface, ArrayAccess
     /**
      * Sets to_currency
      *
-     * @param \Swagger\Client\Model\Currency $to_currency to_currency
+     * @param \Billingo\Model\Currency $to_currency to_currency
      *
      * @return $this
      */

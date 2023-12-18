@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Billingo\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Billingo\ObjectSerializer;
 
 /**
  * OrganizationData Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Billingo
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class OrganizationData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'tax_code' => 'string',
-        'subscription' => '\Swagger\Client\Model\Subscription'
+        'subscription' => '\Billingo\Model\Subscription'
     ];
 
     /**
@@ -234,7 +234,7 @@ class OrganizationData implements ModelInterface, ArrayAccess
     /**
      * Gets subscription
      *
-     * @return \Swagger\Client\Model\Subscription
+     * @return \Billingo\Model\Subscription
      */
     public function getSubscription()
     {
@@ -244,7 +244,7 @@ class OrganizationData implements ModelInterface, ArrayAccess
     /**
      * Sets subscription
      *
-     * @param \Swagger\Client\Model\Subscription $subscription subscription
+     * @param \Billingo\Model\Subscription $subscription subscription
      *
      * @return $this
      */
