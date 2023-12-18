@@ -54,9 +54,9 @@ class OnlinePayment
     {
         return [
             self::EMPTY
-            self::BARION
-            self::SIMPLE_PAY
-            self::NO
+            ,self::BARION
+            ,self::SIMPLE_PAY
+            ,self::NO
         ];
     }
 }

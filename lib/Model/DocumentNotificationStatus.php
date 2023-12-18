@@ -55,12 +55,12 @@ class DocumentNotificationStatus
     public static function getAllowableEnumValues()
     {
         return [
-            self::CLOSED
-            self::DOWNLOADED
-            self::FAILED
-            self::NONE
-            self::OPENED
-            self::READED
+            self::CLOSED,
+            self::DOWNLOADED,
+            self::FAILED,
+            self::NONE,
+            self::OPENED,
+            self::READED,
         ];
     }
 }

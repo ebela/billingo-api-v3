@@ -54,9 +54,9 @@ class Round
     {
         return [
             self::FIVE
-            self::NONE
-            self::ONE
-            self::TEN
+            ,self::NONE
+            ,self::ONE
+            ,self::TEN
         ];
     }
 }
