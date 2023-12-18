@@ -53,8 +53,8 @@ class DocumentFormat
     {
         return [
             self::EMPTY
-            self::ELECTRONIC
-            self::TRADITIONAL
+            ,self::ELECTRONIC
+            ,self::TRADITIONAL
         ];
     }
 }

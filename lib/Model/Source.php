@@ -53,8 +53,8 @@ class Source
     {
         return [
             self::ALL
-            self::MANUAL
-            self::NAV
+            ,self::MANUAL
+            ,self::NAV
         ];
     }
 }

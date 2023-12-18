@@ -52,9 +52,9 @@ class PaymentStatusSpending
     public static function getAllowableEnumValues()
     {
         return [
-            self::ALL
-            self::PAID
-            self::UNPAID
+            self::ALL,
+            self::PAID,
+            self::UNPAID,
         ];
     }
 }

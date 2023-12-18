@@ -57,12 +57,12 @@ class DocumentBlockType
     {
         return [
             self::CERTIFICATE_OF_COMPLETION
-            self::DOSSIER
-            self::INVOICE
-            self::OFFER
-            self::ORDER_FORM
-            self::RECEIPT
-            self::WAYBILL
+            ,self::DOSSIER
+            ,self::INVOICE
+            ,self::OFFER
+            ,self::ORDER_FORM
+            ,self::RECEIPT
+            ,self::WAYBILL
         ];
     }
 }

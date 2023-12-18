@@ -78,33 +78,33 @@ class SpendingPaymentMethod
     {
         return [
             self::ARUHITEL
-            self::BANKCARD
-            self::BARION
-            self::BARTER
-            self::CASH
-            self::CASH_ON_DELIVERY
-            self::COUPON
-            self::ELORE_UTALAS
-            self::EP_KARTYA
-            self::KOMPENZACIO
-            self::LEVONAS
-            self::ONLINE_BANKCARD
-            self::OTHER
-            self::PAYLIKE
-            self::PAYONEER
-            self::PAYPAL
-            self::PAYPAL_UTOLAG
-            self::PAYU
-            self::PICK_PACK_PONT
-            self::POSTAI_CSEKK
-            self::POSTAUTALVANY
-            self::SKRILL
-            self::SZEP_CARD
-            self::TRANSFERWISE
-            self::UPWORK
-            self::UTALVANY
-            self::VALTO
-            self::WIRE_TRANSFER
+            ,self::BANKCARD
+            ,self::BARION
+            ,self::BARTER
+            ,self::CASH
+            ,self::CASH_ON_DELIVERY
+            ,self::COUPON
+            ,self::ELORE_UTALAS
+            ,self::EP_KARTYA
+            ,self::KOMPENZACIO
+            ,self::LEVONAS
+            ,self::ONLINE_BANKCARD
+            ,self::OTHER
+            ,self::PAYLIKE
+            ,self::PAYONEER
+            ,self::PAYPAL
+            ,self::PAYPAL_UTOLAG
+            ,self::PAYU
+            ,self::PICK_PACK_PONT
+            ,self::POSTAI_CSEKK
+            ,self::POSTAUTALVANY
+            ,self::SKRILL
+            ,self::SZEP_CARD
+            ,self::TRANSFERWISE
+            ,self::UPWORK
+            ,self::UTALVANY
+            ,self::VALTO
+            ,self::WIRE_TRANSFER
         ];
     }
 }

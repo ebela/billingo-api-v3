@@ -53,8 +53,8 @@ class DocumentExportSortBy
     {
         return [
             self::FULFILLMENT_DATE
-            self::INVOICE_DATE
-            self::INVOICE_RAW_NUMBER
+            ,self::INVOICE_DATE
+            ,self::INVOICE_RAW_NUMBER
         ];
     }
 }

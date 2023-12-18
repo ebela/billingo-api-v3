@@ -52,7 +52,7 @@ class DocumentForm
     {
         return [
             self::ELECTRONIC
-            self::PAPER
+            ,self::PAPER
         ];
     }
 }

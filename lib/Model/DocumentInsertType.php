@@ -54,9 +54,9 @@ class DocumentInsertType
     {
         return [
             self::ADVANCE
-            self::DRAFT
-            self::INVOICE
-            self::PROFORMA
+            ,self::DRAFT
+            ,self::INVOICE
+            ,self::PROFORMA
         ];
     }
 }

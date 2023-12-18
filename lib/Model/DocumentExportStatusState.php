@@ -54,11 +54,11 @@ class DocumentExportStatusState
     public static function getAllowableEnumValues()
     {
         return [
-            self::FAIL
-            self::PENDING
-            self::PROCESSING
-            self::SUCCESS
-            self::WARNING
+            self::FAIL,
+            self::PENDING,
+            self::PROCESSING,
+            self::SUCCESS,
+            self::WARNING,
         ];
     }
 }

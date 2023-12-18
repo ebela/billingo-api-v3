@@ -53,8 +53,8 @@ class DateType
     {
         return [
             self::DUE_DATE
-            self::FULFILLMENT_DATE
-            self::INVOICE_DATE
+            ,self::FULFILLMENT_DATE
+            ,self::INVOICE_DATE
         ];
     }
 }

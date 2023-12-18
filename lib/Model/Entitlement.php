@@ -66,20 +66,20 @@ class Entitlement
     {
         return [
             self::AAM
-            self::ANTIQUES
-            self::ARTWORK
-            self::ATK
-            self::EAM
-            self::EUE
-            self::EUFAD37
-            self::EUFADE
-            self::HO
-            self::KBAET
-            self::NAM_1
-            self::NAM_2
-            self::SECOND_HAND
-            self::TAM
-            self::TRAVEL_AGENCY
+            ,self::ANTIQUES
+            ,self::ARTWORK
+            ,self::ATK
+            ,self::EAM
+            ,self::EUE
+            ,self::EUFAD37
+            ,self::EUFADE
+            ,self::HO
+            ,self::KBAET
+            ,self::NAM_1
+            ,self::NAM_2
+            ,self::SECOND_HAND
+            ,self::TAM
+            ,self::TRAVEL_AGENCY
         ];
     }
 }
